@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="Title">
+            <h2 id="h2">Limited Liability Partnership</h2>
+        </div>
+        <hr id="hr"></hr>
+        <div class="topper container">
+            <h2>Starting</h2>
+            <div>
+                <i class="fa fa-inr" style="font-size: 36px; color:black; opacity:1;"> <span style="font-size: 2em; font-family:Arial, Helvetica, sans-serif; font-weight: 500;">999</span></i>
+            </div>
+            <a href="#" style="text-decoration: none;" target="_blank">+ Statutory Fees</a>
+        </div>
+        <div class="wrapper container">
+            LLP was introduced to provide a form of business that is easy
+            to maintain and to help owners by providing them with limited
+            liability. Limited Liability Partnership Registration combines the
+            benefits of a partnership with that of a limited liability company.
+            <a href="./about.html" target="_blank" style="text-decoration: none;" id="bottom">Know More</a>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="scroll">
+            <button class="transpar" onclick="toggle(this);"><i class="fa fa-circle" style="font-size: 24px;"></i></button>
+            <button class="transpar selected" onclick="toggle(this);"><i class="fa fa-circle" style="font-size: 24px;"></i></button>
+            <button class="transpar" onclick="toggle(this);"><i class="fa fa-circle" style="font-size: 24px;"></i></button>
+            <button class="transpar" onclick="toggle(this);"><i class="fa fa-circle" style="font-size: 24px;"></i></button>
+        </div>
+    </footer>
+    <script type='text/javascript'>
+        function toggle(btn)
+        {
+             var btnArray = document.getElementsByClassName('transpar');
+             for(i = 0; i < btnArray.length; i++)
+             {
+                 if(btn == btnArray[i])
+                 {
+                     
+                     if(!btn.classList.contains("selected"))
+                     {
+                         btn.className += " selected";
+                     }
+                 }
+                 else
+                 {
+                     
+                     btnArray[i].className = "transpar";
+                 }
+             }
+        }
+        </script>
+</body>
+
+</html>
